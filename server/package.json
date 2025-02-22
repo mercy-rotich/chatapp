@@ -1,0 +1,42 @@
+{
+
+  "type": "module",
+
+  "dependencies": {
+
+    "dotenv": "^16.4.7",
+
+    "express": "^4.21.2",
+
+    "mongodb": "^6.13.0",
+
+    "mongoose": "^8.10.1",
+
+    "nodemon": "^3.1.9"
+
+  },
+
+  "scripts": {
+
+    "start": "node server.js",
+
+    "dev": "nodemon server.js"
+
+  },
+
+  "name": "server",
+
+  "version": "1.0.0",
+
+  "main": "index.js",
+
+  "keywords": [],
+
+  "author": "",
+
+  "license": "ISC",
+
+  "description": ""
+
+}
+
