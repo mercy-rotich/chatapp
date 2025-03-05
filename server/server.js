@@ -88,6 +88,17 @@ app.post("/", async (req, res) => {
 
 })
 
+app.get("/:id",async(req,res)=>{
+    const {id} =req.params
+
+    const getChat = await Chat.findById(id);
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({
+            message:"could not find the note"
+        })
+    }
+})
+
 //updating chat messages to the db
 app.put("/", (req, res) => {
 
